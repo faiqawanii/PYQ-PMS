@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PYQPMS Dashboard</title>
+<link rel="stylesheet" href="interf.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    
+    <div class="sidebar-header">
+        <button id="menuBtn">☰</button>
+        <h2>PYQPMS</h2>
+    </div>
+
+    <ul>
+        <li class="active">🏠 <span>Home</span></li>
+        <li>📥 <span>My Downloads</span></li>
+        <li>⭐ <span>Saved Papers</span></li>
+        <li>🕒 <span>Recent</span></li>
+        <li>⚙️ <span>Account Settings</span></li>
+        <li>🚪 <span>Logout</span></li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <input type="text" id="search" placeholder="Search papers...">
+        <div class="user">👤 <span id="displayUsername">Guest</span></div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <select id="course" onchange="searchTable()">
+            <option value="">Course</option>
+            <option>BTech CSE</option>
+            <option>BTech AI & ML</option>
+            <option>BCA</option>
+        </select>
+
+        <select id="subject" onchange="searchTable()">
+            <option value="">Subject</option>
+            <option>DBMS</option>
+            <option>Operating Systems</option>
+            <option>Machine Learning</option>
+        </select>
+
+        <select id="semester" onchange="searchTable()">
+            <option value="">Sem</option>
+            <option>1</option><option>2</option><option>3</option>
+            <option>4</option><option>5</option><option>6</option>
+            <option>7</option><option>8</option>
+        </select>
+
+        <select id="year" onchange="searchTable()">
+            <option value="">Year</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+        </select>
+    </div>
+
+    <!-- SUBJECT SECTION -->
+    <div class="section">
+        <h3>Subjects</h3>
+
+        <div class="subject-container">
+            <div class="subject-scroll">
+                <div class="subject-card">DBMS</div>
+                <div class="subject-card">OS</div>
+                <div class="subject-card">CN</div>
+                <div class="subject-card">ML</div>
+                <div class="subject-card">AI</div>
+                <div class="subject-card">SE</div>
+                <div class="subject-card">Compiler</div>
+                <div class="subject-card">Cyber</div>
+                <div class="subject-card">Cloud</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RECENTLY UPLOADED -->
+    <div class="section">
+        <div class="section-header">
+            <h3>Recently Uploaded</h3>
+            <span class="view-all" onclick="toggleView()">View All</span>
+        </div>
+
+        <div class="cards limited" id="recentSection">
+            <div class="card">DBMS - 2026</div>
+            <div class="card">OS - 2024</div>
+            <div class="card">ML - 2026</div>
+            <div class="card extra">CN - 2025</div>
+            <div class="card extra">AI - 2026</div>
+        </div>
+    </div>
+
+    <!-- ALL PAPERS -->
+    <div class="cards" id="paperContainer">
+
+        <div class="card">
+            <h3>DBMS</h3>
+            <p>BTech AI & ML | Sem 4 | 2026</p>
+            <button>View</button>
+            <button>Download</button>
+        </div>
+
+        <div class="card">
+            <h3>Operating Systems</h3>
+            <p>BTech CSE | Sem 3 | 2024</p>
+            <button>View</button>
+            <button>Download</button>
+        </div>
+
+        <div class="card">
+            <h3>Machine Learning</h3>
+            <p>BTech AI & ML | Sem 6 | 2026</p>
+            <button>View</button>
+            <button>Download</button>
+        </div>
+
+        <div class="card">
+            <h3>Computer Networks</h3>
+            <p>BTech CSE | Sem 5 | 2025</p>
+            <button>View</button>
+            <button>Download</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="interf.js"></script>
+</body>
+</html>

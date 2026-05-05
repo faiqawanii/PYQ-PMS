@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT */
+.left {
+    flex: 1;
+    background: #F7F9FB; /* sand */
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.left img {
+    display: bolck;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.left h1 {
+    color: #012b4c;
+}
+
+/* RIGHT */
+.right {
+    flex: 1;
+    background: linear-gradient(135deg, #5b7edd, #B48C36); /* blue */
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right h1 {
+    color: #00335B;           /* The Navy Blue */
+    font-family: 'Georgia', serif;
+    font-size: 48px;          /* Large and clear */
+    font-weight: 700;         /* Bold */
+    margin-bottom: 24px;      /* Space before the description */
+    line-height: 1.2;         /* Keeps the lines tight if it wraps */
+    letter-spacing: -0.5px;   /* Subtle professional touch */
+
+}
+
+.right p {
+    width: 60%;
+}
+
+/* Center helper */
+.center {
+    text-align: center;
+}
+
+/* Inputs aligned slightly right */
+.input-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input {
+    width: 80%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    background: whitesmoke;
+}
+
+/* Password eye */
+.password-box {
+    position: relative;
+}
+
+.password-box i {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+}
+
+/* Roles */
+.roles button {
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #678aea;
+    cursor: pointer;
+}
+
+.roles button.active {
+    background: #678aea;
+    color: white;
+}
+
+/* Login button */
+.login-btn {
+    margin-top: 15px;
+    padding: 12px 40px;
+    border-radius: 25px;
+    border: none;
+    background: #6384df;
+    color: white;
+    cursor: pointer;
+}
+
+/* Signup button */
+.signup-btn {
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: none;
+    background: #B48C36;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* Text */
+.forgot {
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+.signup {
+    margin-top: 15px;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Error */
+#error {
+    color: red;
+}

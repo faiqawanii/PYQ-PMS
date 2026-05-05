@@ -1,0 +1,146 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+display: flex;
+height: 100vh;
+}
+
+.left {
+flex: 1;
+background: #F7F9FB;
+padding: 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.left img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+justify-content: center;
+}
+
+.left h1 {
+color: #012b4c;
+}
+
+.right {
+flex: 1;
+background: linear-gradient(135deg, #5b7edd, #B48C36);
+color: whitesmoke;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.right h1 {
+color: #00335B;
+font-family: 'Georgia', serif;
+font-size: 48px;
+font-weight: 700;
+margin-bottom: 24px;
+line-height: 1.2;
+letter-spacing: -0.5px;
+}
+
+.right p {
+width: 60%;
+}
+
+.center {
+text-align: center;
+}
+
+.input-box {
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+
+input {
+width: 80%;
+padding: 14px;
+margin: 10px 0;
+border-radius: 25px;
+border: none;
+background: whitesmoke;
+}
+
+.password-box {
+position: relative;
+}
+
+.password-box i {
+position: absolute;
+right: 10%;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+color: gray;
+}
+
+.roles button {
+margin: 5px;
+margin-bottom: 15px;
+padding: 8px 18px;
+border-radius: 20px;
+border: none;
+background: #678aea;
+cursor: pointer;
+}
+
+.roles button.active {
+background: #678aea;
+color: white;
+}
+
+.login-btn {
+margin-top: 15px;
+padding: 12px 40px;
+border-radius: 25px;
+border: none;
+background: #6384df;
+color: white;
+cursor: pointer;
+}
+
+.signup-btn {
+padding: 15px 40px;
+border-radius: 25px;
+border: none;
+background: #B48C36;
+color: whitesmoke;
+cursor: pointer;
+}
+
+.forgot {
+font-size: 13px;
+color: #555;
+cursor: pointer;
+}
+
+.signup {
+margin-top: 15px;
+}
+
+.hidden {
+display: none;
+}
+
+.reset-btn {
+margin-top: 10px;
+padding: 10px 20px;
+border-radius: 20px;
+border: none;
+}
+
+#error {
+color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PYQ-PMS Documentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: #0f2044; color: white; min-height: 100vh; padding: 48px 32px; }
+    .back { color: #c9a84c; text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 40px; }
+    .back:hover { color: #e2c47a; }
+    h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: white; margin-bottom: 8px; }
+    .subtitle { color: rgba(255,255,255,0.45); font-size: 0.95rem; margin-bottom: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; max-width: 900px; }
+    .doc-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.25); border-radius: 14px; padding: 22px; text-decoration: none; color: white; display: flex; align-items: center; gap: 16px; transition: all 0.25s ease; }
+    .doc-card:hover { border-color: #c9a84c; background: rgba(201,168,76,0.08); transform: translateY(-3px); }
+    .doc-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .doc-name { font-size: 0.9rem; font-weight: 500; }
+    .doc-type { font-size: 0.72rem; color: #c9a84c; margin-top: 3px; text-transform: uppercase; letter-spacing: 0.08em; }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back">← Back to Home</a>
+  <h1>Documentation</h1>
+  <p class="subtitle">Project documents, diagrams and reports for PYQ-PMS</p>
+  <div class="grid">
+    <a href="SRS.pdf" class="doc-card" target="_blank"><div class="doc-icon">📋</div><div><div class="doc-name">SRS</div><div class="doc-type">PDF</div></div></a>
+    <a href="sdd.pdf" class="doc-card" target="_blank"><div class="doc-icon">📐</div><div><div class="doc-name">SDD</div><div class="doc-type">PDF</div></div></a>
+    <a href="Feasibility.pdf" class="doc-card" target="_blank"><div class="doc-icon">📊</div><div><div class="doc-name">Feasibility</div><div class="doc-type">PDF</div></div></a>
+    <a href="GanttChart.pdf" class="doc-card" target="_blank"><div class="doc-icon">📅</div><div><div class="doc-name">Gantt Chart</div><div class="doc-type">PDF</div></div></a>
+    <a href="ClassDiagram.pdf" class="doc-card" target="_blank"><div class="doc-icon">🗂️</div><div><div class="doc-name">Class Diagram</div><div class="doc-type">PDF</div></div></a>
+    <a href="Activity Diagram.pdf" class="doc-card" target="_blank"><div class="doc-icon">🔄</div><div><div class="doc-name">Activity Diagram</div><div class="doc-type">PDF</div></div></a>
+    <a href="Sequence_Diagram.pdf" class="doc-card" target="_blank"><div class="doc-icon">🔁</div><div><div class="doc-name">Sequence Diagram</div><div class="doc-type">PDF</div></div></a>
+    <a href="DFD_L0.pdf" class="doc-card" target="_blank"><div class="doc-icon">🗺️</div><div><div class="doc-name">DFD Level 0</div><div class="doc-type">PDF</div></div></a>
+    <a href="DFD_L1.pdf" class="doc-card" target="_blank"><div class="doc-icon">🗺️</div><div><div class="doc-name">DFD Level 1</div><div class="doc-type">PDF</div></div></a>
+    <a href="White Box.pdf" class="doc-card" target="_blank"><div class="doc-icon">🧪</div><div><div class="doc-name">White Box</div><div class="doc-type">PDF</div></div></a>
+    <a href="USE CASE DIAGRAM.jpeg" class="doc-card" target="_blank"><div class="doc-icon">📌</div><div><div class="doc-name">Use Case Diagram</div><div class="doc-type">JPEG</div></div></a>
+  </div>
+</body>
+</html>
